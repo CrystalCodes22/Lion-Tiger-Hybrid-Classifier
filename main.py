@@ -11,7 +11,7 @@ def get_prediction(image_data):
     #print(response)
     return response
 
-image_file = 'dog_14.jpeg'
+image_file = 'hybrid.jpg'
 
 with open(image_file, "rb") as image:
   encoded_image = base64.b64encode(image.read())
