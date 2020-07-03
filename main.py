@@ -4,7 +4,7 @@ import json
 
 # Read images from each category
 def get_prediction(image_data):
-    url = 'https://3h6ys7t373.execute-api.us-east-1.amazonaws.com/Predict/9e276b15-3885-4620-a43d-86992571d889'
+    url = 'https://f9rc0my02e.execute-api.us-east-1.amazonaws.com/Predict/a7c95ca9-45e5-4802-aafa-597f59be7743'
     r = requests.post(url, data=image_data)
     response_raw = getattr(r,'_content').decode("utf-8")
     response = json.loads(response_raw)
